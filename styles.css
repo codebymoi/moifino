@@ -56,7 +56,7 @@ body {
 
 @keyframes slide-in-bottom {
     from {
-        transform: translateY(-100%);
+        transform: translateY(100%);
         opacity: 0.25;
     }
     to {
