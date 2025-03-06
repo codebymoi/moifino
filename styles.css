@@ -50,10 +50,6 @@ body {
     animation: slide-in-left 500ms;
 }
 
-.icons {
-    padding-top: 100px;
-}
-
 @keyframes slide-in-bottom {
     from {
         transform: translateY(100%);
@@ -65,15 +61,19 @@ body {
     }
 }
 
+.icons {
+    padding-top: 100px;
+    animation: slide-in-bottom 500ms;
+}
+
 .bi {
     font-size: clamp(2em, 4vw, 3em);
     color: white;
-    animation: slide-in-bottom 500ms;
 }
 
 @keyframes slide-in-right {
     from {
-        transform: translateX(100%);
+        transform: translateX(50%);
         opacity: 0.25;
     }
     to {
