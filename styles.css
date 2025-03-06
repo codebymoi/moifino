@@ -50,20 +50,20 @@ body {
     animation: slide-in-left 500ms;
 }
 
-@keyframes slide-in-bottom {
+@keyframes zoom-in {
     from {
-        transform: translateY(100%);
+        transform: scale(0.25, 0.25);
         opacity: 0.25;
     }
     to {
-        transform: translateY(0%);
+        transform: scale(1, 1);
         opacity: 1;
     }
 }
 
 .icons {
     padding-top: 100px;
-    animation: slide-in-bottom 500ms;
+    animation: zoom-in 500ms;
 }
 
 .bi {
@@ -73,7 +73,7 @@ body {
 
 @keyframes slide-in-right {
     from {
-        transform: translateX(50%);
+        transform: translateX(25%);
         opacity: 0.25;
     }
     to {
