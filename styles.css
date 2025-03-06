@@ -52,7 +52,7 @@ body {
 
 @keyframes zoom-in {
     from {
-        transform: scale(0, 0);
+        transform: scale(0.5, 0.5);
         opacity: 0.25;
     }
     to {
@@ -63,12 +63,12 @@ body {
 
 .icons {
     padding-top: 100px;
+    animation: zoom-in 500ms;
 }
 
 .bi {
     font-size: clamp(2em, 4vw, 3em);
     color: white;
-    animation: zoom-in 500ms;
 }
 
 @keyframes slide-in-right {
