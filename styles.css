@@ -27,6 +27,17 @@ body {
     height: 100%;
 }
 
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.25;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 .logo {
     padding-top: 10px;
     padding-left: 10px;
@@ -36,15 +47,39 @@ body {
     text-decoration: none;
     color: white;
     position: fixed;
+    animation: slide-in-left 500ms;
 }
 
 .icons {
     padding-top: 100px;
 }
 
+@keyframes slide-in-bottom {
+    from {
+        transform: translateY(-100%);
+        opacity: 0.25;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
 .bi {
     font-size: clamp(2em, 4vw, 3em);
     color: white;
+    animation: slide-in-bottom 500ms;
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0.25;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
 .lqnt {
@@ -56,6 +91,7 @@ body {
     padding-right: clamp(20px, 5vw, 100px);
     line-height: 0.5;
     white-space: nowrap;
+    animation: slide-in-right 500ms;
 }
 
 .fuerte {
@@ -66,6 +102,7 @@ body {
     padding-right: clamp(20px, 5vw, 100px);
     line-height: 1;
     white-space: nowrap;
+    animation: slide-in-right 500ms;
 }
 
 .foot {
