@@ -20,7 +20,7 @@ body {
 }
 
 .bg-image {
-    background-image: url(rojo.png);
+    background-image: url(rojo.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
