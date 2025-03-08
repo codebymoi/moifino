@@ -5,7 +5,7 @@ body {
     overflow-y: scroll;
 }
 
-.spinner-wrapper {
+.load-color {
     background-color: #990019;
     position: fixed;
     top: 0;
@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
+    transition: all 2.0s;
 }
 
 .bg-image {
@@ -32,6 +32,7 @@ body {
         transform: translateX(-100%);
         opacity: 0.25;
     }
+
     to {
         transform: translateX(0%);
         opacity: 1;
@@ -40,14 +41,13 @@ body {
 
 .logo {
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 14px;
     font-family: 'Times New Roman', Times, sans-serif;
     font-size: 2.5em;
     font-weight: 500;
     text-decoration: none;
     color: white;
     position: fixed;
-    animation: slide-in-left 500ms;
 }
 
 @keyframes zoom-in {
@@ -55,15 +55,45 @@ body {
         transform: scale(0.5, 0.5);
         opacity: 0.25;
     }
+
     to {
         transform: scale(1, 1);
         opacity: 1;
     }
 }
 
+.container-fluid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-flex {
+    display: flex !important
+}
+
+.flex-column {
+    flex-direction: column !important
+}
+
+.justify-content-end {
+    justify-content: flex-end !important
+}
+
+.justify-content-center {
+    justify-content: center !important
+}
+
+.align-items-center {
+    align-items: center !important
+}
+
+.p-4 {
+    padding: 2rem !important
+}
+
 .icons {
     padding-top: 100px;
-    animation: zoom-in 500ms;
 }
 
 .bi {
@@ -76,6 +106,7 @@ body {
         transform: translateX(25%);
         opacity: 0.25;
     }
+
     to {
         transform: translateX(0%);
         opacity: 1;
@@ -83,7 +114,7 @@ body {
 }
 
 .lqnt {
-    font-family: Outfit;
+    font-family: Outfit, sans-serif;
     font-weight: bold;
     font-size: clamp(3.5em, 12vw, 6em);
     color: white;
@@ -91,26 +122,14 @@ body {
     padding-right: clamp(20px, 5vw, 100px);
     line-height: 0.5;
     white-space: nowrap;
-    animation: slide-in-right 500ms;
 }
 
 .fuerte {
-    font-family: Outfit;
+    font-family: Outfit, sans-serif;
     font-weight: bold;
     font-size: clamp(2.05em, 7vw, 3.5em);
     color: #990019;
     padding-right: clamp(20px, 5vw, 100px);
     line-height: 1;
-    white-space: nowrap;
-    animation: slide-in-right 500ms;
-}
-
-.foot {
-    font-family: 'Arial', Helvetica, sans-serif;
-    font-size: 0.6em;
-    color: rgb(150, 150, 150);
-    padding-left: 10px;
-    position: fixed;
-    bottom: 0;
     white-space: nowrap;
 }
