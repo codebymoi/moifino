@@ -6,7 +6,7 @@ body {
 }
 
 .bg-image {
-    background-image: url(rojo.webp);
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
